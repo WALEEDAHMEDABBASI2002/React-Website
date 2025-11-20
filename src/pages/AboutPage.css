@@ -1,0 +1,834 @@
+
+/* ==============================
+   ABOUT PAGE - GLOBAL STYLING
+============================== */
+.about-page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* ==============================
+     HERO / MISSION SECTION
+  ============================== */
+  .about-hero {
+    background: #023560;
+    color: #fff;
+    padding: 100px 0 80px;
+    margin-top: 0 !important;
+    text-align: center;
+  }
+  
+  .hero-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtext {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    opacity: 0.95;
+  }
+  
+  .hero-mission {
+    font-size: 16px;
+    opacity: 0.9;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  
+  /* ==============================
+     WHO WE ARE SECTION
+  ============================== */
+  .about-overview {
+    background: #f8f5ed;
+    padding: 80px 0;
+    color: #023560;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #01294a;
+  }
+  
+/* ==========================================================
+   LEADERSHIP / ABOUT PAGE SECTION
+   ========================================================== */
+
+   .leadership {
+    padding: 100px 20px;
+  }
+  
+  .leadership:nth-child(even) {
+    background: #f8f5ed;
+  }
+  
+  .leadership .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .leadership .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    color: #023560;
+    margin-bottom: 60px;
+  }
+  
+  /* Founder photo and name */
+  .team-photo-large {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease;
+  }
+  
+  .team-photo-large:hover {
+    transform: translateY(-8px);
+  }
+  
+  .leader-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #023560;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .leader-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #045f9e;
+    margin-bottom: 20px;
+  }
+  
+  /* Founder message area */
+  .ceo-message {
+    flex: 1;
+    min-width: 320px;
+  }
+  
+  .message-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0a3c74;
+    margin-bottom: 20px;
+  }
+  
+  .ceo-message p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+  
+  .founder-signature {
+    font-size: 15px;
+    color: #045f9e;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+  
+  /* Alternating layout */
+  .leadership:nth-child(odd) .row {
+    flex-direction: row;
+  }
+  
+  .leadership:nth-child(even) .row {
+    flex-direction: row-reverse;
+  }
+  
+  /* ==============================
+     BUSINESS MODEL SECTION
+  ============================== */
+  .business-model {
+    background: #023560;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .business-model .section-heading {
+    color: #fff;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  .model-card {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .model-card i {
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+  }
+  
+  .model-card h4 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
+  
+  .model-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* ==============================
+     COMPLIANCE SECTION
+  ============================== */
+  .compliance {
+    background: #f9fbff;
+    padding: 80px 0;
+    color: #023560;
+  }
+  
+  .compliance-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .compliance-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .compliance-list i {
+    color: #0abec6;
+    margin-right: 10px;
+  }
+  
+  .legal-links {
+    margin-top: 20px;
+  }
+  
+  .legal-links a {
+    color: #023560;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  
+  /* floating background shapes */
+.about-hero::before,
+.about-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: floatHero 10s ease-in-out infinite alternate;
+}
+.about-hero::before {
+  width: 120px;
+  height: 120px;
+  top: 40px;
+  left: 60px;
+}
+.about-hero::after {
+  width: 180px;
+  height: 180px;
+  bottom: 60px;
+  right: 80px;
+}
+@keyframes floatHero {
+  from { transform: translateY(0); opacity: 0.6; }
+  to { transform: translateY(25px); opacity: 1; }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.leadership .team-photo-large { animation: fadeInRight 1s ease forwards; }
+.leadership .ceo-message { animation: fadeInLeft 1s ease 0.2s forwards; }
+
+.our-team .team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.our-team .team-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.our-team .team-photo:hover {
+  box-shadow: 0 0 15px rgba(2, 53, 96, 0.4);
+  transform: scale(1.08);
+}
+.model-card i {
+  transform: scale(0.5);
+  opacity: 0;
+  animation: popIn 0.6s ease forwards;
+}
+@keyframes popIn {
+  to { transform: scale(1); opacity: 1; }
+}
+.compliance .section-heading::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, #0ABEC6, #5ca9fb);
+  margin: 15px auto 0;
+  animation: slideLine 2s ease-in-out infinite alternate;
+}
+@keyframes slideLine {
+  from { transform: scaleX(0.5); opacity: 0.5; }
+  to { transform: scaleX(1.2); opacity: 1; }
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN - MOBILE RESPONSIVENESS
+   ========================================================== */
+
+/* Tablet and smaller desktop */
+@media (max-width: 992px) {
+  .about-hero {
+    padding: 120px 20px 80px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .hero-subtext {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .hero-mission {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  .about-overview {
+    padding: 60px 20px;
+  }
+
+  .about-overview .section-heading {
+    font-size: 28px;
+  }
+
+  .about-overview p {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  .leadership {
+    padding: 80px 20px;
+  }
+
+  .leadership .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .leadership .section-heading {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .team-photo-large {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .ceo-message {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .leader-name {
+    font-size: 22px;
+  }
+
+  .leader-title {
+    font-size: 14px;
+  }
+
+  .message-heading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .ceo-message p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .business-model {
+    padding: 80px 20px;
+  }
+
+  .business-model .section-heading {
+    font-size: 28px;
+  }
+
+  .model-card {
+    margin-bottom: 30px;
+  }
+
+  .model-card i {
+    font-size: 36px;
+  }
+
+  .model-card h4 {
+    font-size: 18px;
+  }
+
+  .model-card p {
+    font-size: 14px;
+  }
+
+  .compliance {
+    padding: 60px 20px;
+  }
+
+  .compliance .section-heading {
+    font-size: 28px;
+  }
+
+  .compliance-list li {
+    font-size: 15px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .about-hero {
+    padding: 100px 15px 60px;
+  }
+
+  .hero-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  .hero-mission {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about-overview {
+    padding: 50px 15px;
+  }
+
+  .about-overview .section-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-overview p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .leadership {
+    padding: 60px 15px;
+  }
+
+  .leadership .section-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .team-photo-large {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .leader-name {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .leader-title {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .ceo-message {
+    margin-top: 20px;
+    min-width: 100%;
+  }
+
+  .message-heading {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .ceo-message p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .founder-signature {
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .business-model {
+    padding: 60px 15px;
+  }
+
+  .business-model .section-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .model-card {
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+  .model-card i {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .model-card h4 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .model-card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .compliance {
+    padding: 50px 15px;
+  }
+
+  .compliance .section-heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .compliance p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .compliance-list {
+    text-align: left;
+  }
+
+  .compliance-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+
+  .compliance-list i {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  /* Hide floating shapes on mobile for better performance */
+  .about-hero::before,
+  .about-hero::after {
+    display: none;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 24px;
+  }
+
+  .hero-subtext {
+    font-size: 14px;
+  }
+
+  .hero-mission {
+    font-size: 13px;
+  }
+
+  .about-overview .section-heading,
+  .leadership .section-heading,
+  .business-model .section-heading,
+  .compliance .section-heading {
+    font-size: 22px;
+  }
+
+  .team-photo-large {
+    border-radius: 12px;
+  }
+
+  .leader-name {
+    font-size: 18px;
+  }
+
+  .ceo-message p {
+    font-size: 13px;
+  }
+}
+
+/* ==========================================================
+   OUR TEAM SECTION - BPOS DIGITAL
+   ========================================================== */
+
+   .our-team {
+    background: #f8f5ed;
+    padding: 100px 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .our-team .section-heading {
+    font-size: 32px;
+    font-weight: 800;
+    color: #023560;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .our-team .section-subtext {
+    font-size: 17px;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+  }
+  
+  /* === GRID LAYOUT === */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  /* === TEAM CARD === */
+  .team-card {
+    background: transparent;
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* === TEAM IMAGE === */
+  .team-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #023560;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .team-photo:hover img {
+    transform: scale(1.08);
+  }
+  
+  /* === TEAM TEXT === */
+  .team-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #023560;
+    margin-bottom: 6px;
+  }
+  
+  .team-role {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0abec6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .team-desc {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* === FADE-IN EFFECT ON LOAD === */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .team-card {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  .team-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .team-card:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .team-card:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
+  /* === RESPONSIVE ADJUSTMENTS === */
+  @media (max-width: 992px) {
+    .our-team {
+      padding: 80px 20px;
+    }
+  
+    .our-team .section-heading {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+  
+    .our-team .section-subtext {
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+  
+    .team-photo {
+      width: 110px;
+      height: 110px;
+    }
+  
+    .team-name {
+      font-size: 18px;
+    }
+  
+    .team-role {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .our-team {
+      padding: 60px 15px;
+    }
+  
+    .our-team .section-heading {
+      font-size: 24px;
+    }
+  
+    .our-team .section-subtext {
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+  
+    .team-photo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .team-name {
+      font-size: 17px;
+    }
+  
+    .team-role {
+      font-size: 13px;
+    }
+  
+    .team-desc {
+      font-size: 14px;
+    }
+  }
+  
+  /* Normalize OUR TEAM section spacing */
+.team-section {
+  background: #f8f5ed;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.leadership:last-of-type {
+  padding-bottom: 60px;
+}
+/* ==============================
+   UPDATE – OUR TEAM SECTION COLOR & SPACING
+============================== */
+.team-section {
+  background: #ffffff;        /* changed from #f8f5ed to pure white */
+  padding: 100px 0;           /* even vertical spacing */
+  margin: 0;
+  color: #333;                /* keep text readable */
+}
+
+.team-section .section-heading {
+  color: #023560;             /* keep your deep-blue heading color */
+  margin-bottom: 15px;
+}
+
+.team-section .section-subtext {
+  color: #555;                /* soft gray for subtext */
+  margin-bottom: 60px;
+}
+.team-section {
+  background: #ffffff;
+  padding: 100px 0;
+  margin: 0;
+  color: #333;
+  border-bottom: 1px solid #eee; /* subtle separation */
+}

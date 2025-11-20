@@ -1,0 +1,151 @@
+/* ============================
+   PRODUCT CAROUSEL – FINAL CSS
+   ============================ */
+
+   #portfolio {
+    width: 100vw;
+    min-height: auto;
+    background: #f8f9fa;
+    padding: 10px 0 20px 0;   /* reduced top & bottom padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-title {
+    margin-bottom: 10px !important; /* reduce gap below title */
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #023560;
+}
+
+/* MAIN CAROUSEL WRAPPER */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    padding: 0 20px;       /* reduced horizontal padding */
+    margin-top: 0 !important;
+}
+
+/* TRACK CONTAINER */
+.carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* TRACK */
+.carousel-track {
+    display: flex;
+    height: auto;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* EACH SLIDE */
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;  /* reduced from 40px */
+}
+
+/* SLIDE CARD */
+.product-slide {
+    display: flex;
+    gap: 30px;                /* was 40px */
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 16px;
+    padding: 25px !important; /* was 40px */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE CONTAINER */
+.product-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+.product-image {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* TEXT CONTENT */
+.product-info {
+    flex: 1;
+    color: #333;
+}
+
+/* NAV ARROWS */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 2px solid #023560;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-arrow.left { left: 10px; }
+.carousel-arrow.right { right: 10px; }
+
+/* DOTS */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;   /* reduced from 25px */
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+}
+
+.carousel-dot.active {
+    background: #023560;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .product-slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-arrow {
+        display: none; /* hide arrows on small screens */
+    }
+
+    .product-slide {
+        padding: 20px !important;
+    }
+}

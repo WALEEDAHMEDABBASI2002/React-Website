@@ -1,0 +1,180 @@
+{
+  "Header": {
+    "title": "Lorem ipsum dolor sit amet",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+  },
+  "About": {
+  "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+  "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+  "Why": [
+    "Trusted Global Partner",
+    "Seamless Payment Experience",
+    "Advanced Security Standards"
+  ],
+  "Why2": [
+    "Future-Ready Solutions",
+    "24/7 Dedicated Support",
+    "Innovation at the Core"
+  ]
+},
+  "Gallery": [
+    {
+      "title": "Handheld POS Device",
+      "largeImage": "img/portfolio/Image1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "FeaturesList1":"Wireless Connectivity for Mobility",
+      "FeaturesList2":"Built-In Thermal Receipt Printer",
+      "FeaturesList3":"Long Battery Life for All-Day Use"
+    },
+    {
+      "title": "Self-Service Kiosk",
+      "largeImage": "img/portfolio/Image2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "FeaturesList1":"Large Touchscreen User Interface",
+      "FeaturesList2":"Multiple Payment Options Supported",
+      "FeaturesList3":"Automatic POS & Kitchen Sync"
+    },
+    {
+      "title": "Compact Countertop POS Terminal",
+      "largeImage": "img/portfolio/Image3.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "FeaturesList1":"EMV, NFC & Contactless Payment Support",
+      "FeaturesList2":"Integrated Printer & Easy Setup",
+      "FeaturesList3":"Reliable for 24/7 Operation"
+    },
+    {
+      "title": "Kitchen Display System",
+      "largeImage": "img/portfolio/Image4.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "FeaturesList1":"Instant Order Synchronization",
+      "FeaturesList2":"Heat & Splash-Resistant Design",
+      "FeaturesList3":"Seamless POS and Online Order Integration"
+    },
+    {
+      "title": "Countertop POS System",
+      "largeImage": "img/portfolio/Image5.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "FeaturesList1":"High-Speed Transaction Processing",
+      "FeaturesList2":"Integrated Cash & Receipt Management",
+      "FeaturesList3":"Real-Time Reporting and Analytics"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-briefcase",
+      "name": "Merchant Acquisition",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.."
+    },
+    {
+      "icon": "fa fa-shield",
+      "name": "Security & Compliance",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-sitemap",
+      "name": "Channel Partnerships",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-rocket",
+      "name": "Sales Enablement",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-headphones",
+      "name": "Partner Support",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-line-chart",
+      "name": "Analytics & Reporting",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/T1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "name": "Sam Mitchell – Retail Store Owner"
+    },
+    {
+      "img": "img/testimonials/T1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "name": "Alex Shray – Café Manager"
+    },
+    {
+      "img": "img/testimonials/T1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "name": "David Brown – Logistics Company Director"
+    },
+    {
+      "img": "img/testimonials/T1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "name": "Oliver Jones – Pharmacy Owner"
+    },
+    {
+      "img": "img/testimonials/T1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "name": "Lorenzo Romano – Supermarket Owner"
+    },
+    {
+      "img": "img/testimonials/T1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat.",
+      "name": "Maria Gonzales – Boutique Owner"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "David Kim",
+      "job": "CEO & Founder"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Marcus Rodriguez",
+      "job": "CTO"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Emily Watson",
+      "job": "Head of Embroidery Services"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Sarah Chen",
+      "job": "VP of Sales"
+    }
+  ],
+  "Contact": {
+    "address": "Lorem ipsum dolor sit amet",
+    "phone": "+1 300-000-0000",
+    "email": "sales@abcde.com",
+    "facebook": "",
+    "twitter": "",
+    "youtube": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "Features": [
+    {
+      "icon": "fa fa-line-chart",
+      "title": "Proven Sales Infrastructure",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-shield",
+      "title": "Regulatory & Compliance Ready",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-link",
+      "title": "Seamless Partner Integration",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    },
+    {
+      "icon": "fa fa-globe",
+      "title": "Multichannel Merchant Outreach",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id facilisis volutpat."
+    }
+  ]
+}

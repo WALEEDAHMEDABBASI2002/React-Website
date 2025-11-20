@@ -1,0 +1,608 @@
+/* ==========================================================
+   PARTNERS PAGE STYLING
+   (Corporate-grade clean version - Matches AboutPage theme)
+   ----------------------------------------------------------
+   Author: BPOS Digital
+   ========================================================== */
+
+   .partners-page {
+    margin-top: 0 !important;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .text-white {
+    color: #ffffff !important;
+  }
+  
+  /* Fix Contact section in Partners page */
+  .partners-page #contact {
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .partners-page #footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* ==========================================================
+     HERO SECTION (CLEAN IMAGE BACKGROUND)
+     ========================================================== */
+  .partners-hero {
+    position: relative;
+    color: #fff;
+    padding: 120px 0 100px;
+    text-align: center;
+    background: linear-gradient(
+      rgba(2, 53, 96, 0.85),
+      rgba(2, 53, 96, 0.85)
+    );
+  }
+  
+  .hero-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtext {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 25px;
+    opacity: 0.95;
+    line-height: 1.7;
+  }
+  
+  .hero-btn {
+    margin-top: 15px;
+  }
+  
+  /* Subtle glow animation overlay */
+  .partners-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.08),
+      transparent 70%
+    );
+    animation: floatBg 10s ease-in-out infinite alternate;
+  }
+  
+  @keyframes floatBg {
+    from {
+      transform: translateY(0);
+      opacity: 0.6;
+    }
+    to {
+      transform: translateY(20px);
+      opacity: 1;
+    }
+  }
+  
+  /* ==========================================================
+     BASE SECTION STYLES
+     ========================================================== */
+  .partners-section {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .light-bg {
+    background: #f8f5ed;
+    color: #023560;
+  }
+  
+  .dark-bg {
+    background: #023560;
+    color: #fff;
+  }
+  
+  .section-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
+  
+  .section-text {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  /* ==========================================================
+     OUR SALES MODEL
+     ========================================================== */
+  .model-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    color: #045f9e;
+    gap: 10px;
+  }
+  
+  .model-step {
+    background: #023560;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
+  
+  .model-arrow {
+    color: #045f9e;
+    font-size: 18px;
+  }
+  
+  /* ==========================================================
+   EXPERTISE SECTION – RESPONSIVE ICON + ALIGNMENT FIX
+   ========================================================== */
+
+/* ✅ Base (Desktop default alignment) */
+.expertise-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 20px;
+  transition: all 0.4s ease;
+}
+
+.expertise-card i {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px auto !important;
+  transition: all 0.5s;
+  color: #fff;
+  background: rgba(98, 166, 249, 0.15);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  width: 100px;
+  height: 100px;
+  font-size: 38px;
+  padding: 30px 0;
+}
+
+.expertise-card h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.expertise-card p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.expertise-card:hover {
+  transform: translateY(-10px);
+}
+
+
+/* 🖥️ Desktop (≥992px) */
+@media (min-width: 992px) {
+  .expertise-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .expertise-card {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 30px 20px;
+  }
+
+  .expertise-card i {
+    width: 100px;
+    height: 100px;
+    font-size: 38px;
+    padding: 30px 0;
+  }
+}
+
+
+/* 📱 Tablet / Small Laptop (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .expertise-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    text-align: center !important;
+    gap: 25px 0;
+  }
+
+  .expertise-card {
+    flex: 0 0 50% !important;   /* ✅ 2 per row */
+    max-width: 50% !important;
+    box-sizing: border-box;
+    padding: 25px 15px;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    margin: 0 auto !important;
+    float: none !important;     /* ✅ override Bootstrap float */
+  }
+
+  .expertise-card i {
+    width: 85px !important;
+    height: 85px !important;
+    font-size: 32px !important;
+    padding: 22px 0 !important;
+    margin: 0 auto 18px auto !important;
+    background: rgba(98, 166, 249, 0.2);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .expertise-card h4,
+  .expertise-card p {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+
+/* 📞 Mobile (≤767px) */
+@media (max-width: 767px) {
+  .expertise-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .expertise-card {
+    width: 100%;
+    max-width: 95%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .expertise-card i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 18px 0;
+    margin: 0 auto 15px auto !important;
+    background: rgba(98, 166, 249, 0.25);
+  }
+
+  .expertise-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .expertise-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+  
+  /* ==========================================================
+     SALES PROCESS TIMELINE
+     ========================================================== */
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline-step {
+    flex: 1 1 160px;
+    min-width: 160px;
+    background: #fff;
+    border: 2px solid #023560;
+    border-radius: 12px;
+    padding: 25px 15px;
+    color: #023560;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-step:hover {
+    transform: translateY(-6px);
+  }
+  
+  .timeline-step .circle {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #023560;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-step h5 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* ==========================================================
+   PARTNER BENEFITS – RESPONSIVE ICON + ALIGNMENT FIX
+   ========================================================== */
+
+/* ✅ Base alignment fix (applies to all screen sizes) */
+.benefit-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.benefit-card i {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px auto !important; /* ✅ Always centered horizontally */
+  transition: all 0.4s ease;
+}
+
+/* 🖥️ Desktop (≥992px) */
+@media (min-width: 992px) {
+  .benefits-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .benefit-card {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 30px 20px;
+  }
+
+  .benefit-card i {
+    width: 100px;
+    height: 100px;
+    font-size: 38px;
+    padding: 30px 0;
+    background: rgba(98, 166, 249, 0.15);
+  }
+}
+
+/* 📱 Tablet (768px – 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .benefits-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    gap: 20px 0;
+  }
+
+  .benefit-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 25px 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .benefit-card i {
+    width: 85px;
+    height: 85px;
+    font-size: 32px;
+    padding: 22px 0;
+    background: rgba(98, 166, 249, 0.2);
+  }
+
+  .benefit-card h4 {
+    font-size: 18px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+/* 📞 Mobile (≤767px) */
+@media (max-width: 767px) {
+  .benefits-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .benefit-card {
+    width: 100%;
+    max-width: 95%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .benefit-card i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 18px 0;
+    background: rgba(98, 166, 249, 0.25);
+    margin: 0 auto 15px auto !important;
+  }
+
+  .benefit-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .benefit-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+
+  /* ==========================================================
+     CHANNEL PARTNERSHIP MODEL
+     ========================================================== */
+  .model-card {
+    padding: 30px 20px;
+    transition: all 0.4s ease;
+  }
+
+  .model-card i {
+    font-size: 38px;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    border-radius: 50%;
+    background: rgba(98, 166, 249, 0.15);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .model-card h4 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .model-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .model-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* ==========================================================
+     CALL TO ACTION (CTA)
+     ========================================================== */
+  .partners-cta {
+    background: linear-gradient(135deg, #023560, #045f9e);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .partners-cta h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .partners-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  
+  /* ==========================================================
+     RESPONSIVE DESIGN
+     ========================================================== */
+  @media (max-width: 991px) {
+    .timeline {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .timeline-step {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-heading {
+      font-size: 32px;
+    }
+  
+    .section-heading {
+      font-size: 26px;
+    }
+  
+    .partners-section {
+      padding: 70px 0;
+    }
+  
+    .timeline-step {
+      width: 100%;
+    }
+  }
+
+
+
+
+/* Force white headings in Partner Benefits */
+.partners-section.benefits.dark-bg .benefit-card h4 {
+  color: #fff !important;
+}
+
+/* (optional) keep the paragraph text slightly softer on dark bg */
+.partners-section.benefits.dark-bg .benefit-card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+

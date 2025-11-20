@@ -1,0 +1,349 @@
+/* ==========================================================
+   PRODUCT PAGE (BPOS Digital)
+   Inspired by Clover layout — corporate, clean & responsive
+   ========================================================== */
+
+   .product-page {
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    color: #023560;
+  }
+  
+  /* ==========================================================
+     HERO SECTION
+     ========================================================== */
+  .product-hero {
+    background: #023560;
+    color: #fff;
+    text-align: center;
+    padding: 140px 20px 120px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .product-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1), transparent 60%);
+    animation: heroFloat 10s ease-in-out infinite alternate;
+    pointer-events: none; /* ✅ allows clicks to pass through */
+    z-index: 0; /* ✅ keep it behind content */
+  }
+  
+  
+  @keyframes heroFloat {
+    from { transform: translateY(0); }
+    to { transform: translateY(25px); }
+  }
+  
+  .hero-heading {
+    font-family: "Raleway", sans-serif;
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtext {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    opacity: 0.95;
+    line-height: 1.8;
+  }
+  
+  .cta-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 36px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 30px 0;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background: linear-gradient(135deg, #0abec6, #045f9e);
+    transform: translateY(-3px);
+  }
+  
+  /* ==========================================================
+     HIGHLIGHTS SECTION
+     ========================================================== */
+  .highlights {
+    background: #f8f5ed;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .highlight-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 40px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .highlight-card i {
+    font-size: 38px;
+    color: #023560;
+    margin-bottom: 15px;
+  }
+  
+  .highlight-card h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #023560;
+  }
+  
+  .highlight-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* ==========================================================
+     PRODUCT SHOWCASE SECTIONS
+     ========================================================== */
+  .product-section {
+    padding: 100px 20px;
+  }
+  
+  .product-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .product-section:nth-child(even) {
+    background: #f8f5ed;
+  }
+  
+  .layout-left .product-image-block {
+    order: 1;
+  }
+  
+  .layout-left .product-text-block {
+    order: 2;
+  }
+  
+  .layout-right .product-image-block {
+    order: 2;
+  }
+  
+  .layout-right .product-text-block {
+    order: 1;
+  }
+  
+  .product-image-block {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+  }
+  
+  .product-display {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+  }
+  
+  .product-display:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product-text-block {
+    flex: 1;
+    min-width: 320px;
+  }
+  
+  .product-text-block h2 {
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #023560;
+  }
+  
+  .product-text-block p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  
+  .product-text-block ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .product-text-block ul li {
+    font-size: 15px;
+    color: #045f9e;
+    margin-bottom: 6px;
+  }
+  
+  .product-text-block ul li::before {
+    content: "✔ ";
+    color: #0abec6;
+  }
+  
+  .learn-btn {
+    background: transparent;
+    border: 2px solid #045f9e;
+    color: #045f9e;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .learn-btn:hover {
+    background: #045f9e;
+    color: #fff;
+  }
+  
+  /* ==========================================================
+     SUPPORT / SETUP SECTION
+     ========================================================== */
+  .support-section {
+    background: #023560;
+    color: #fff;
+    padding: 100px 20px;
+  }
+  
+  .support-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .support-text {
+    flex: 1;
+    min-width: 320px;
+  }
+  
+  .support-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .support-text p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  .support-image {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+  }
+  
+  .support-image img {
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ==========================================================
+     FINAL CTA
+     ========================================================== */
+  .final-cta {
+    background: linear-gradient(135deg, #045f9e, #023560);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .final-cta h2 {
+    font-size: 34px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .final-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    line-height: 1.8;
+    opacity: 0.95;
+  }
+  
+  /* ==========================================================
+     RESPONSIVE DESIGN
+     ========================================================== */
+  @media (max-width: 992px) {
+    .product-flex,
+    .support-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .product-text-block {
+      text-align: center;
+    }
+  
+    .product-display {
+      max-width: 400px;
+    }
+  
+    .hero-heading {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-heading {
+      font-size: 28px;
+    }
+  
+    .section-heading {
+      font-size: 24px;
+    }
+  
+    .product-section {
+      padding: 70px 20px;
+    }
+  
+    .final-cta h2 {
+      font-size: 26px;
+    }
+  }
+  
